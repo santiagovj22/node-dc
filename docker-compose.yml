@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  apiNode:
+    image: node:latest
+    restart: always
+    build: ./api
+    container_name: nodetest
+    ports:
+      - 3001:3001
